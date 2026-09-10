@@ -182,3 +182,37 @@
     border-right-color: var(--border);
   }
 }
+
+
+/* .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 20px;
+
+  li {
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+    transition-delay: calc(sibling-index() * 100ms);
+    a {
+      text-decoration: none;
+      color: var(--text-h);
+      font-weight: bold;
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+} 
+
+.nav-list:hover li{
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
+} */
