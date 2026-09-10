@@ -1,10 +1,14 @@
-import Navbar from './Navbar'
+import Navbar from "./Navbar";
+import logo from "../assets/logoipsum-435.svg";
+
+
 const Header = () => {
   return (
-    <div>Header
-        <Navbar />
-    </div>
-  )
-}
+    <>
+      <img src={logo} alt="Logo" />
+      <Navbar />
+    </>
+  );
+};
 
-export default Header
+export default Header;
