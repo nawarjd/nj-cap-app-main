@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Navbar = () => {
   return (
     <ul className="navbar">
@@ -10,7 +8,7 @@ const Navbar = () => {
       <li><a href="/order-online">Order Online</a></li>
       <li><a href="/login">Login</a></li>
     </ul>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

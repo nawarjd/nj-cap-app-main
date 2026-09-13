@@ -1,6 +1,3 @@
-import React from "react";
-import food from "../assets/restauranfood.jpg";
-
 const Main = () => {
   return (
     <div className="main_container">

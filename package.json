@@ -1,5 +1,10 @@
 {
   "name": "nj-cap-app",
+<<<<<<< HEAD
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+=======
   "version": "0.0.0",
   "private": true,
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
@@ -7,6 +12,7 @@
   "author": "",
   "type": "module",
   "main": "eslint.config.js",
+>>>>>>> e3b22900960d47352ff6d1875a93f9b344e2c085
   "scripts": {
     "dev": "vite",
     "build": "vite build",

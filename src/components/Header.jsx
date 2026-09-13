@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import logo from "../assets/Logo.svg";
 import { IoMenu } from "react-icons/io5";
