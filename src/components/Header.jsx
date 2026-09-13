@@ -1,14 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
-import logo from "../assets/logoipsum-435.svg";
+import logo from "../assets/Logo.svg";
+import { IoMenu } from "react-icons/io5";
 
 
 const Header = () => {
   return (
-    <>
-      <img src={logo} alt="Logo" />
+    <nav className="header">
+      <img src={logo} alt="Little Lemon Logo" className="logo" />
       <Navbar />
-    </>
+      <div className='menu_icon'><IoMenu /></div>
+    </nav>
   );
 };
 
