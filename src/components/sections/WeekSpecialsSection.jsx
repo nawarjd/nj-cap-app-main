@@ -1,8 +1,8 @@
-import React from "react";
 import greekSalad from "../../assets/greek salad.jpg";
 import bruchetta from "../../assets/bruchetta.svg";
 import lemonDessert from "../../assets/lemon dessert.jpg";
 import deliveryIcon from "../../assets/delivery.svg";
+import { Link } from "react-router-dom";
 
 const WeekSpecialsSection = () => {
   const cards = [
@@ -39,7 +39,7 @@ const WeekSpecialsSection = () => {
     <div className="week_specials_container">
       <div className="week_specials_top">
         <h2>This Week Specials!</h2>
-        <button className="main_btn">Online Menu</button>
+        <Link className="main_btn" to="/menu">Online Menu</Link>
       </div>
 
       <div className="week_specials_cards">

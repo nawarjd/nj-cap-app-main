@@ -1,5 +1,5 @@
-import React from "react";
 import food from "../../assets/restauranfood.jpg";
+import { Link } from "react-router-dom";
 
 const Hero_sec = () => {
   return (
@@ -10,14 +10,25 @@ const Hero_sec = () => {
             <h1>Little Lemon</h1>
             <h5>Chicago</h5>
           </div>
-          <p>
-            we are a family owned Mediterranean restaurant, focused on
-            traditional recipes servved with a modern twist.
-          </p>
-          <button className="main_btn">Reserve a Table</button>
+          <div className="hero_text_img_mobile">
+            <p>
+              we are a family owned Mediterranean restaurant, focused on
+              traditional recipes servved with a modern twist.
+            </p>
+            <img
+              src={food}
+              className="food_img_mob hide_desk"
+              alt="restaurant food"
+            />
+          </div>
+          <Link className="main_btn" to="/reservations">Reserve a Table</Link>
         </div>
 
-        <img src={food} className="food_img hide_mobile" alt="restaurant food" />
+        <img
+          src={food}
+          className="food_img hide_mobile"
+          alt="restaurant food"
+        />
       </div>
     </div>
   );
