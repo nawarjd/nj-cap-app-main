@@ -5,9 +5,7 @@ import WeekSpecialsSection from "./sections/WeekSpecialsSection";
 import BookingPage from "./BookingPage";
 import ConfirmedBooking from "./ConfirmedBooking";
 import { useReducer, useState } from "react";
-import { initializeTimes, updateTimes } from "./bookingTimes";
-
-/* global submitAPI */
+import { initializeTimes, submitReservation, updateTimes } from "./bookingTimes";
 
 const SimplePage = ({ title, children }) => (
   <main className="simple_page">
@@ -29,14 +27,7 @@ const Main = () => {
     setSubmissionError("");
 
     try {
-      if (typeof submitAPI !== "function") {
-        setSubmissionError(
-          "Reservations are temporarily unavailable. Please try again later.",
-        );
-        return;
-      }
-
-      if (submitAPI(formData)) {
+      if (submitReservation(formData)) {
         navigate("/confirmed");
         return;
       }

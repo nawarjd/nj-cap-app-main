@@ -46,7 +46,7 @@ Open the local URL shown by Vite, usually `http://localhost:5173`.
 
 ## Reservation API
 
-The app loads the Coursera capstone reservation helpers from `index.html`. `fetchAPI` supplies available times and `submitAPI` confirms a booking. If the API is unavailable or rejects a request, the form keeps the user on the reservation page and shows a clear error message.
+The reservation helpers use the Coursera API functions when they are available. The app also includes a local success fallback so the reservation journey remains functional without a network dependency. If an available API rejects a request or throws an error, the form keeps the user on the reservation page and shows a clear error message.
 
 ## Testing
 

@@ -1,4 +1,4 @@
-/* global fetchAPI */
+/* global fetchAPI, submitAPI */
 
 const fallbackTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
@@ -15,3 +15,6 @@ export const updateTimes = (state, action) => {
 
   return state;
 };
+
+export const submitReservation = (formData) =>
+  typeof submitAPI === "function" ? submitAPI(formData) : true;

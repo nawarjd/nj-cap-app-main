@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { initializeTimes, updateTimes } from "./bookingTimes.js";
+import { initializeTimes, submitReservation, updateTimes } from "./bookingTimes.js";
 
 const mockTimes = ["17:00", "18:30", "20:00"];
 
@@ -38,5 +38,15 @@ describe("booking time helpers", () => {
     const currentTimes = ["19:00"];
 
     expect(updateTimes(currentTimes, { type: "OTHER_ACTION" })).toBe(currentTimes);
+  });
+
+  it("confirms a reservation locally when the Coursera helper is unavailable", () => {
+    expect(submitReservation(new FormData())).toBe(true);
+  });
+
+  it("returns the result from the Coursera submission helper when available", () => {
+    vi.stubGlobal("submitAPI", () => false);
+
+    expect(submitReservation(new FormData())).toBe(false);
   });
 });
