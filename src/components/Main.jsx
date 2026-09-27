@@ -45,8 +45,8 @@ const Main = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<InfoSection />} />
-      <Route path="/menu" element={<WeekSpecialsSection />} />
+      <Route path="/about" element={<InfoSection headingLevel="h1" />} />
+      <Route path="/menu" element={<WeekSpecialsSection headingLevel="h1" />} />
       <Route
         path="/reservations"
         element={

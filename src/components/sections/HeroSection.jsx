@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Hero_sec = () => {
   return (
-    <div className="hero_container">
+    <section className="hero_container" aria-labelledby="hero-title">
       <div className="hero_inner_container">
         <div className="main_text">
           <div className="main_text_header">
-            <h1>Little Lemon</h1>
+            <h1 id="hero-title">Little Lemon</h1>
             <h5>Chicago</h5>
           </div>
           <div className="hero_text_img_mobile">
@@ -30,7 +30,7 @@ const Hero_sec = () => {
           alt="restaurant food"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

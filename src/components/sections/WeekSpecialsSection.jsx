@@ -4,7 +4,8 @@ import lemonDessert from "../../assets/lemon dessert.jpg";
 import deliveryIcon from "../../assets/delivery.svg";
 import { Link } from "react-router-dom";
 
-const WeekSpecialsSection = () => {
+const WeekSpecialsSection = ({ headingLevel = "h2" }) => {
+  const Heading = headingLevel;
   const cards = [
     {
       title: "Greek Salad",
@@ -36,9 +37,9 @@ const WeekSpecialsSection = () => {
   ];
 
   return (
-    <div className="week_specials_container">
+    <section className="week_specials_container" aria-labelledby="specials-title">
       <div className="week_specials_top">
-        <h2>This Week Specials!</h2>
+        <Heading id="specials-title">This Week Specials!</Heading>
         <Link className="main_btn" to="/menu">Online Menu</Link>
       </div>
 
@@ -66,7 +67,7 @@ const WeekSpecialsSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

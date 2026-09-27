@@ -27,9 +27,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="testimonials_container">
+    <section className="testimonials_container" aria-labelledby="testimonials-title">
       <div className="testimonials_inner_container">
-        <h2>Testimonials</h2>
+        <h2 id="testimonials-title">Testimonials</h2>
 
         <div className="testimonials_cards">
           {testimonials.map((testimonial, index) => (
@@ -46,7 +46,7 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,11 +1,13 @@
 import MarioAndAdrian from "../../assets/Mario and Adrian A.jpg";
 import restaurantChefB from "../../assets/restaurant chef B.jpg";
 
-const InfoSection = () => {
+const InfoSection = ({ headingLevel = "h2" }) => {
+  const Heading = headingLevel;
+
   return (
-    <div className="info_container">
+    <section className="info_container" aria-labelledby="about-title">
       <div className="info_text">
-        <h2>Little Lemon</h2>
+        <Heading id="about-title">Little Lemon</Heading>
         <h5>Chicago</h5>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas
@@ -19,7 +21,7 @@ const InfoSection = () => {
         <img src={restaurantChefB} alt="" />
         <img src={MarioAndAdrian} alt="" />
       </div>
-    </div>
+    </section>
   );
 };
 

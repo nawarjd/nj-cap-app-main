@@ -396,7 +396,9 @@ footer .footer_content ul a:hover {
   padding: 90px clamp(24px, 4vw, 80px) 80px;
 }
 .booking_intro h1,
-.simple_page h1 {
+.simple_page h1,
+.info_text h1,
+.week_specials_top h1 {
   font-family: var(--font-Markazi);
   font-size: var(--font-size-title);
   line-height: 1;
@@ -533,6 +535,7 @@ footer .footer_content ul a:hover {
   .info_imgs {
     width: 100%;
   }
+  .info_text h1,
   .info_text h2,
   .info_text h5 {
     text-align: center;
