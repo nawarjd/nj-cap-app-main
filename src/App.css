@@ -132,6 +132,7 @@ main, .simple_page {
   outline: none;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.1s linear;
 }
 .main_btn:hover {
@@ -182,15 +183,16 @@ main, .simple_page {
 
 .week_specials_cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 .week_special_card {
   display: flex;
+  flex: 1 1 240px;
   flex-direction: column;
-  flex: 1;
+  max-width: 279px;
 }
 .week_special_card img {
   width: 100%;
