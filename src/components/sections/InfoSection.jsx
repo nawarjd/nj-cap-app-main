@@ -13,10 +13,11 @@ const InfoSection = ({ headingLevel = "h2", variant = "home" }) => {
         <Heading id="about-title">Little Lemon</Heading>
         <h5>Chicago</h5>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quas
-          enim rem. Animi saepe consectetur odit nesciunt! Esse dolore quibusdam
-          perferendis quia, iure molestias. Magnam labore ratione voluptatibus
-          voluptate nobis.
+          Little Lemon is a family-owned Mediterranean restaurant in the heart
+          of Chicago. We combine treasured family recipes with fresh, seasonal
+          ingredients and a modern twist. From relaxed lunches to memorable
+          dinners, we welcome every guest with warm hospitality and vibrant
+          flavors inspired by the Mediterranean coast.
         </p>
       </div>
 
