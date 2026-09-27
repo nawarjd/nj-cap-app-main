@@ -170,6 +170,10 @@ main, .simple_page {
   flex-direction: column;
   gap: 2rem;
 }
+.week_specials_container--page {
+  padding-top: 90px;
+  padding-bottom: 80px;
+}
 .week_specials_top {
   display: flex;
   justify-content: space-between;

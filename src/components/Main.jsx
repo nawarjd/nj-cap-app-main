@@ -46,7 +46,10 @@ const Main = () => {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<InfoSection headingLevel="h1" />} />
-      <Route path="/menu" element={<WeekSpecialsSection headingLevel="h1" />} />
+      <Route
+        path="/menu"
+        element={<WeekSpecialsSection headingLevel="h1" variant="page" />}
+      />
       <Route
         path="/reservations"
         element={
