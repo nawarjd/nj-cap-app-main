@@ -1,11 +1,14 @@
 import MarioAndAdrian from "../../assets/Mario and Adrian A.jpg";
 import restaurantChefB from "../../assets/restaurant chef B.jpg";
 
-const InfoSection = ({ headingLevel = "h2" }) => {
+const InfoSection = ({ headingLevel = "h2", variant = "home" }) => {
   const Heading = headingLevel;
 
   return (
-    <section className="info_container" aria-labelledby="about-title">
+    <section
+      className={`info_container info_container--${variant}`}
+      aria-labelledby="about-title"
+    >
       <div className="info_text">
         <Heading id="about-title">Little Lemon</Heading>
         <h5>Chicago</h5>

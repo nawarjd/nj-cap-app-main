@@ -172,7 +172,6 @@ main, .simple_page {
 }
 .week_specials_container--page {
   padding-top: 90px;
-  padding-bottom: 80px;
 }
 .week_specials_top {
   display: flex;
@@ -319,6 +318,10 @@ main, .simple_page {
   justify-content: space-between;
   align-items: center;
   gap: 6rem;
+}
+.info_container--page {
+  padding-top: 90px;
+  padding-bottom: 80px;
 }
 .info_text {
   width: 50%;
